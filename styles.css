@@ -133,6 +133,7 @@ footer {
 .contact-number {
     font-weight: bold;
     text-decoration: none; /* Remove o sublinhado do link */
+    color:white;
 }
 
 .contact-number:hover,
