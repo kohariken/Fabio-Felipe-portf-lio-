@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:url(imagens/6150433.jpg) no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px); /* Aplica o desfoque */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+header {
+    background-color: #10141d;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+section {
+    padding: 80px 20px 20px 20px;
+    margin: 10px 0;
+}
+
+#about, #portfolio, #contact {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content {
+    animation: fadeIn 2s;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #121921;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: scale(1.25);
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+#contact .contact-number {
+    font-size: 1.5em;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.about-content p {
+    margin: 0 auto;
+    max-width: 55vw;
+    text-align: justify;
+    background-color: #121921;
+    padding: 30px;
+    border: 1px solid #717171;
+}
+
+#contact {
+    text-align: center;
+}
+
+.contact-number {
+    font-weight: bold;
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.contact-number:hover,
+.contact-number:active,
+.contact-number:focus {
+    text-decoration: none; /* Mantém o link sem sublinhado também ao passar o mouse, clicar ou focar */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
